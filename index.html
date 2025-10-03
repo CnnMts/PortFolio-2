@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Porte folio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porte folio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
+    <style>
     :root{
       --bg-1: #EBEBF2;
       --bg-2: #D2D3D9; 
@@ -44,224 +44,316 @@
     }
 
   </style>
-</head>
-<body class="antialiased" style="background: linear-gradient(180deg,var(--bg-1),var(--bg-2)); color:var(--ink-1); font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
-  <div class="min-h-screen flex flex-col">
-    <header class="sticky top-0 z-40 backdrop-blur-sm" style="background: linear-gradient(180deg, rgba(235,235,242,0.6), rgba(210,211,217,0.35));">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+  </head>
+  <body class="antialiased"
+    style="background: linear-gradient(180deg,var(--bg-1),var(--bg-2)); color:var(--ink-1); font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
+    <div class="min-h-screen flex flex-col">
+      <header class="sticky top-0 z-40 backdrop-blur-sm"
+        style="background: linear-gradient(180deg, rgba(235,235,242,0.6), rgba(210,211,217,0.35));">
+        <div
+          class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
-        <nav class="hidden md:flex items-center gap-6 text-sm text-[var(--ink-2)]">
-          <a class="nav-underline" href="#projects">Projets</a>
-          <a class="nav-underline" href="#about">À propos</a>
-          <a class="nav-underline" href="#contact">Contact</a>
-          <a href="/Assets/Cv/CV.pdf" class="ml-3 inline-block px-3 py-1.5 rounded-md glass text-[var(--ink-2)] text-sm font-medium">CV</a>
-        </nav>
+          <nav
+            class="hidden md:flex items-center gap-6 text-sm text-[var(--ink-2)]">
+            <a class="nav-underline" href="#projects">Projets</a>
+            <a class="nav-underline" href="#about">À propos</a>
+            <a class="nav-underline" href="#contact">Contact</a>
+            <a href="Assets/Cv/CV.pdf"
+              class="ml-3 inline-block px-3 py-1.5 rounded-md glass text-[var(--ink-2)] text-sm font-medium">CV</a>
+          </nav>
 
-        <div class="flex items-center gap-3">
-          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="bg-[var(--ink-2)] text-[var(--bg-1)] px-3 py-2 rounded-md text-sm font-medium hover:scale-105 transition-transform focus-ring">Travaillons ensemble</button>
+          <div class="flex items-center gap-3">
+            <button
+              onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+              class="bg-[var(--ink-2)] text-[var(--bg-1)] px-3 py-2 rounded-md text-sm font-medium hover:scale-105 transition-transform focus-ring">Travaillons
+              ensemble</button>
+          </div>
         </div>
-      </div>
-    </header>
-    <main class="flex-1">
-      <section class="max-w-6xl mx-auto px-6 py-20 lg:py-28">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      </header>
+      <main class="flex-1">
+        <section class="max-w-6xl mx-auto px-6 py-20 lg:py-28">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-          <div class="space-y-6 fade-up">
-            <p class="inline-block text-sm px-3 py-1 rounded-full text-[var(--muted)] glass">Bonjour, je suis développeur</p>
-            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight" style="color:var(--ink-1)">Je crée des expériences web élégantes et fiables.</h2>
-            <p class="text-[var(--ink-2)] max-w-xl">Spécialisé en fullstack (PHP, JS, Vue) et passionné par la cybersécurité et les agents IA. J’aide entreprises et créateurs à transformer leurs idées en produits durables.</p>
+            <div class="space-y-6 fade-up">
+              <p
+                class="inline-block text-sm px-3 py-1 rounded-full text-[var(--muted)] glass">Bonjour,
+                je suis développeur</p>
+              <h2 class="text-4xl md:text-5xl font-extrabold leading-tight"
+                style="color:var(--ink-1)">Je crée des expériences web élégantes
+                et fiables.</h2>
+              <p class="text-[var(--ink-2)] max-w-xl">Spécialisé en fullstack
+                (PHP, JS, Vue) et passionné par la cybersécurité et les agents
+                IA. J’aide entreprises et créateurs à transformer leurs idées en
+                produits durables.</p>
 
-            <div class="flex gap-4 items-center">
-              <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-md glass font-medium hover:translate-y-[-2px] transition-transform focus-ring">Voir mes projets →</a>
-              <a href="#contact" class="text-sm text-[var(--muted)] hover:underline">Me contacter</a>
+              <div class="flex gap-4 items-center">
+                <a href="#projects"
+                  class="inline-flex items-center gap-2 px-5 py-3 rounded-md glass font-medium hover:translate-y-[-2px] transition-transform focus-ring">Voir
+                  mes projets →</a>
+                <a href="#contact"
+                  class="text-sm text-[var(--muted)] hover:underline">Me
+                  contacter</a>
+              </div>
+
+              <div class="mt-6 flex gap-3 text-sm text-[var(--muted)]">
+                <div class="flex items-center gap-2"><span
+                    class="w-2 h-2 rounded-full"
+                    style="background:var(--ink-2)"></span> En alternance à la
+                  RATP</div>
+                <div class="flex items-center gap-2"><span
+                    class="w-2 h-2 rounded-full"
+                    style="background:var(--muted)"></span> Freelance
+                  ponctuel</div>
+              </div>
             </div>
 
-            <div class="mt-6 flex gap-3 text-sm text-[var(--muted)]">
-              <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full" style="background:var(--ink-2)"></span> En alternance à la RATP</div>
-              <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full" style="background:var(--muted)"></span> Freelance ponctuel</div>
+            <div class="fade-up">
+              <div class="glass rounded-2xl p-6 shadow-xl">
+                <div
+                  class="h-48 bg-gradient-to-br from-[var(--bg-2)] to-[var(--bg-1)] rounded-xl overflow-hidden relative project-card">
+                  <img src="Assets/SiteTasse.png" alt="preview"
+                    class="w-full h-full object-cover project-cover transition-transform duration-500" />
+                  <div class="absolute left-4 bottom-4 p-3 rounded-md glass">
+                    <p class="text-xs text-[var(--muted)]">Project</p>
+                    <h3 class="text-sm font-semibold"
+                      style="color:var(--ink-1)">Interface produit — mockup</h3>
+                  </div>
+                </div>
+
+                <div class="mt-4 grid grid-cols-2 gap-3">
+                  <div
+                    class="p-3 rounded-lg bg-white/60 text-[var(--ink-2)]">Stack:
+                    Vue • PHP • MySQL</div>
+                  <div
+                    class="p-3 rounded-lg bg-white/60 text-[var(--ink-2)]">UI:
+                    Tailwind • Figma</div>
+                </div>
+              </div>
             </div>
+
+          </div>
+        </section>
+        <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-2xl font-bold">Projets récents</h3>
+            <p class="text-sm text-[var(--muted)]">• Cas pratiques • Code
+              ouvert</p>
           </div>
 
-          <div class="fade-up">
-            <div class="glass rounded-2xl p-6 shadow-xl">
-              <div class="h-48 bg-gradient-to-br from-[var(--bg-2)] to-[var(--bg-1)] rounded-xl overflow-hidden relative project-card">
-                <img src="/Assets/SiteTasse.png" alt="preview" class="w-full h-full object-cover project-cover transition-transform duration-500" />
-                <div class="absolute left-4 bottom-4 p-3 rounded-md glass">
-                  <p class="text-xs text-[var(--muted)]">Project</p>
-                  <h3 class="text-sm font-semibold" style="color:var(--ink-1)">Interface produit — mockup</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article
+              class="project-card rounded-xl overflow-hidden glass p-0 transition-transform hover:shadow-2xl">
+              <a href="/project.html" class="block group"
+                aria-label="Voir projet 1">
+                <div class="h-40 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+                    alt="project 1"
+                    class="w-full h-full object-cover project-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
-              </div>
+                <div class="p-4">
+                  <h4 class="font-semibold" style="color:var(--ink-1)">Caisse
+                    outils — Application locale</h4>
+                  <p class="text-sm text-[var(--muted)] mt-2">Application de
+                    gestion de caisse pour magasin de jeux vidéo d'occasion.
+                    Electron, Nuxt, PDF factures.</p>
+                  <div
+                    class="mt-3 flex items-center justify-between text-xs text-[var(--muted)]">
+                    <span>Vue • Electron</span>
+                    <span>2025</span>
+                  </div>
+                </div>
+              </a>
+            </article>
 
-              <div class="mt-4 grid grid-cols-2 gap-3">
-                <div class="p-3 rounded-lg bg-white/60 text-[var(--ink-2)]">Stack: Vue • PHP • MySQL</div>
-                <div class="p-3 rounded-lg bg-white/60 text-[var(--ink-2)]">UI: Tailwind • Figma</div>
-              </div>
-            </div>
+            <article class="project-card rounded-xl overflow-hidden glass p-0">
+              <a href="#" class="block group" aria-label="Voir projet 2">
+                <div class="h-40 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop"
+                    alt="project 2"
+                    class="w-full h-full object-cover project-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div class="p-4">
+                  <h4 class="font-semibold" style="color:var(--ink-1)">MakePhish
+                    — Scraper intelligent</h4>
+                  <p class="text-sm text-[var(--muted)] mt-2">Outil de
+                    récupération dynamique de champs de formulaire via Selenium
+                    et Chromedriver (Go).</p>
+                  <div
+                    class="mt-3 flex items-center justify-between text-xs text-[var(--muted)]">
+                    <span>Go • Selenium</span>
+                    <span>2025</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="project-card rounded-xl overflow-hidden glass p-0">
+              <a href="#" class="block group" aria-label="Voir projet 3">
+                <div class="h-40 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+                    alt="project 3"
+                    class="w-full h-full object-cover project-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div class="p-4">
+                  <h4 class="font-semibold" style="color:var(--ink-1)">Pokémon
+                    Project — Mini jeu</h4>
+                  <p class="text-sm text-[var(--muted)] mt-2">Jeu web, logique
+                    et design d'interface, prototype pour portfolio.</p>
+                  <div
+                    class="mt-3 flex items-center justify-between text-xs text-[var(--muted)]">
+                    <span>JavaScript • Canvas</span>
+                    <span>2024</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
           </div>
 
-        </div>
-      </section>
-      <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
-        <div class="flex items-center justify-between mb-6">
-          <h3 class="text-2xl font-bold">Projets récents</h3>
-          <p class="text-sm text-[var(--muted)]">• Cas pratiques   • Code ouvert</p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article class="project-card rounded-xl overflow-hidden glass p-0 transition-transform hover:shadow-2xl">
-            <a href="/project.html" class="block group" aria-label="Voir projet 1">
-              <div class="h-40 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop" alt="project 1" class="w-full h-full object-cover project-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
-              <div class="p-4">
-                <h4 class="font-semibold" style="color:var(--ink-1)">Caisse outils — Application locale</h4>
-                <p class="text-sm text-[var(--muted)] mt-2">Application de gestion de caisse pour magasin de jeux vidéo d'occasion. Electron, Nuxt, PDF factures.</p>
-                <div class="mt-3 flex items-center justify-between text-xs text-[var(--muted)]">
-                  <span>Vue • Electron</span>
-                  <span>2025</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <article class="project-card rounded-xl overflow-hidden glass p-0">
-            <a href="#" class="block group" aria-label="Voir projet 2">
-              <div class="h-40 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop" alt="project 2" class="w-full h-full object-cover project-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
-              <div class="p-4">
-                <h4 class="font-semibold" style="color:var(--ink-1)">MakePhish — Scraper intelligent</h4>
-                <p class="text-sm text-[var(--muted)] mt-2">Outil de récupération dynamique de champs de formulaire via Selenium et Chromedriver (Go).</p>
-                <div class="mt-3 flex items-center justify-between text-xs text-[var(--muted)]">
-                  <span>Go • Selenium</span>
-                  <span>2025</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <article class="project-card rounded-xl overflow-hidden glass p-0">
-            <a href="#" class="block group" aria-label="Voir projet 3">
-              <div class="h-40 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop" alt="project 3" class="w-full h-full object-cover project-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
-              <div class="p-4">
-                <h4 class="font-semibold" style="color:var(--ink-1)">Pokémon Project — Mini jeu</h4>
-                <p class="text-sm text-[var(--muted)] mt-2">Jeu web, logique et design d'interface, prototype pour portfolio.</p>
-                <div class="mt-3 flex items-center justify-between text-xs text-[var(--muted)]">
-                  <span>JavaScript • Canvas</span>
-                  <span>2024</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-        </div>
-
-        <div class="mt-8 flex justify-center">
-          <a href="#projects" class="px-5 py-3 rounded-md glass font-medium">Voir tous les projets</a>
-        </div>
-      </section>
-      <section id="about" class="max-w-6xl mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          <div class="lg:col-span-2 space-y-4">
-            <h3 class="text-2xl font-bold">À propos</h3>
-            <p class="text-[var(--ink-2)]">Je m'appelle Matis, développeur fullstack et passionné par la sécurité des systèmes et les agents intelligents. J'aime construire des outils robustes, documenter mon travail et livrer des interfaces agréables et utiles.</p>
-
-            <ul class="mt-4 grid grid-cols-2 gap-2 text-sm text-[var(--muted)]">
-              <li>• Langages : Java, JavaScript, PHP, C, Python</li>
-              <li>• Frameworks : Vue.js, Nuxt, Three.js</li>
-              <li>• Outils : Git, Docker, VirtualBox</li>
-              <li>• Intérêt : Cybersécurité, AI agents, UI/UX</li>
-            </ul>
-
-            <div class="mt-6 flex gap-3">
-              <a href="#contact" class="px-4 py-2 rounded-md bg-[var(--ink-2)] text-[var(--bg-1)] font-medium">Parlons projet</a>
-              <a href="#" class="px-4 py-2 rounded-md border border-[var(--muted)] text-[var(--muted)]">Voir GitHub</a>
-            </div>
+          <div class="mt-8 flex justify-center">
+            <a href="#projects"
+              class="px-5 py-3 rounded-md glass font-medium">Voir tous les
+              projets</a>
           </div>
+        </section>
+        <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <div class="lg:col-span-2 space-y-4">
+              <h3 class="text-2xl font-bold">À propos</h3>
+              <p class="text-[var(--ink-2)]">Je m'appelle Matis, développeur
+                fullstack et passionné par la sécurité des systèmes et les
+                agents intelligents. J'aime construire des outils robustes,
+                documenter mon travail et livrer des interfaces agréables et
+                utiles.</p>
 
-          <aside class="glass rounded-xl p-6">
-            <h4 class="text-lg font-semibold" style="color:var(--ink-1)">Compétences clés</h4>
-            <div class="mt-4 space-y-3 text-sm text-[var(--muted)]">
-              <div>
-                <div class="flex justify-between"><span>Backend (PHP / Node)</span><span>85%</span></div>
-                <div class="w-full h-2 bg-white/40 rounded mt-2 overflow-hidden"><div class="h-full" style="width:85%; background:linear-gradient(90deg,var(--ink-2),var(--muted));"></div></div>
-              </div>
-              <div>
-                <div class="flex justify-between"><span>Frontend (Vue, Tailwind)</span><span>80%</span></div>
-                <div class="w-full h-2 bg-white/40 rounded mt-2 overflow-hidden"><div class="h-full" style="width:80%; background:linear-gradient(90deg,var(--ink-2),var(--muted));"></div></div>
-              </div>
-              <div>
-                <div class="flex justify-between"><span>Cybersécurité</span><span>60%</span></div>
-                <div class="w-full h-2 bg-white/40 rounded mt-2 overflow-hidden"><div class="h-full" style="width:60%; background:linear-gradient(90deg,var(--ink-2),var(--muted));"></div></div>
+              <ul
+                class="mt-4 grid grid-cols-2 gap-2 text-sm text-[var(--muted)]">
+                <li>• Langages : Java, JavaScript, PHP, C, Python</li>
+                <li>• Frameworks : Vue.js, Nuxt, Three.js</li>
+                <li>• Outils : Git, Docker, VirtualBox</li>
+                <li>• Intérêt : Cybersécurité, AI agents, UI/UX</li>
+              </ul>
+
+              <div class="mt-6 flex gap-3">
+                <a href="#contact"
+                  class="px-4 py-2 rounded-md bg-[var(--ink-2)] text-[var(--bg-1)] font-medium">Parlons
+                  projet</a>
+                <a href="#"
+                  class="px-4 py-2 rounded-md border border-[var(--muted)] text-[var(--muted)]">Voir
+                  GitHub</a>
               </div>
             </div>
-          </aside>
-        </div>
-      </section>
-      <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <div class="space-y-4">
-            <h3 class="text-2xl font-bold">Contact</h3>
-            <p class="text-[var(--ink-2)]">Intéressé par une collaboration ? Laisse-moi un message je réponds rapidement.</p>
 
-            <div class="mt-6 glass rounded-xl p-6">
-              <form id="contactForm" class="space-y-4" onsubmit="handleSubmit(event)">
+            <aside class="glass rounded-xl p-6">
+              <h4 class="text-lg font-semibold"
+                style="color:var(--ink-1)">Compétences clés</h4>
+              <div class="mt-4 space-y-3 text-sm text-[var(--muted)]">
                 <div>
-                  <label class="text-sm font-medium">Nom</label>
-                  <input required name="name" class="w-full mt-2 p-3 rounded-md border border-white/30 focus:ring-0 focus:outline-none" placeholder="Ton nom" />
+                  <div class="flex justify-between"><span>Backend (PHP /
+                      Node)</span><span>85%</span></div>
+                  <div
+                    class="w-full h-2 bg-white/40 rounded mt-2 overflow-hidden"><div
+                      class="h-full"
+                      style="width:85%; background:linear-gradient(90deg,var(--ink-2),var(--muted));"></div></div>
                 </div>
                 <div>
-                  <label class="text-sm font-medium">Email</label>
-                  <input required type="email" name="email" class="w-full mt-2 p-3 rounded-md border border-white/30 focus:ring-0 focus:outline-none" placeholder="email@exemple.com" />
+                  <div class="flex justify-between"><span>Frontend (Vue,
+                      Tailwind)</span><span>80%</span></div>
+                  <div
+                    class="w-full h-2 bg-white/40 rounded mt-2 overflow-hidden"><div
+                      class="h-full"
+                      style="width:80%; background:linear-gradient(90deg,var(--ink-2),var(--muted));"></div></div>
                 </div>
                 <div>
-                  <label class="text-sm font-medium">Message</label>
-                  <textarea required name="message" rows="4" class="w-full mt-2 p-3 rounded-md border border-white/30 focus:ring-0 focus:outline-none" placeholder="Parle-moi de ton projet..."></textarea>
+                  <div
+                    class="flex justify-between"><span>Cybersécurité</span><span>60%</span></div>
+                  <div
+                    class="w-full h-2 bg-white/40 rounded mt-2 overflow-hidden"><div
+                      class="h-full"
+                      style="width:60%; background:linear-gradient(90deg,var(--ink-2),var(--muted));"></div></div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <button type="submit" class="px-5 py-3 rounded-md bg-[var(--ink-2)] text-[var(--bg-1)] font-medium hover:scale-105 transition-transform">Envoyer</button>
-                  <div class="text-sm text-[var(--muted)]">ou <a href="mailto:maticonan2006@gmail.com" class="underline">maticonan2006@gmail.com</a></div>
-                </div>
-              </form>
-            </div>
-
+              </div>
+            </aside>
           </div>
-          <div class="flex flex-col justify-center items-center  h-[700px]">
+        </section>
+        <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div class="space-y-4">
-              <div class="glass rounded-xl p-6">
-                <h4 class="font-semibold">Infos rapides</h4>
-                <ul class="mt-3 text-sm text-[var(--muted)] space-y-2">
-                  <li><strong>Localisation:</strong> France Loiret</li>
-                  <li><strong>Disponibilité:</strong> Alternance & Freelance</li>
-                  <li><strong>Langues:</strong> Français, Anglais</li>
-                </ul>
-              </div>
-            </div>
+              <h3 class="text-2xl font-bold">Contact</h3>
+              <p class="text-[var(--ink-2)]">Intéressé par une collaboration ?
+                Laisse-moi un message je réponds rapidement.</p>
 
-            <div class="glass rounded-xl p-6 mt-20">
-              <h4 class="font-semibold">Réseaux</h4>
-              <div class="mt-3 flex gap-3">
-                <a class="p-2 rounded-md glass text-sm" href="#">GitHub</a>
-                <a class="p-2 rounded-md glass text-sm" href="#">LinkedIn</a>
+              <div class="mt-6 glass rounded-xl p-6">
+                <form id="contactForm" class="space-y-4"
+                  onsubmit="handleSubmit(event)">
+                  <div>
+                    <label class="text-sm font-medium">Nom</label>
+                    <input required name="name"
+                      class="w-full mt-2 p-3 rounded-md border border-white/30 focus:ring-0 focus:outline-none"
+                      placeholder="Ton nom" />
+                  </div>
+                  <div>
+                    <label class="text-sm font-medium">Email</label>
+                    <input required type="email" name="email"
+                      class="w-full mt-2 p-3 rounded-md border border-white/30 focus:ring-0 focus:outline-none"
+                      placeholder="email@exemple.com" />
+                  </div>
+                  <div>
+                    <label class="text-sm font-medium">Message</label>
+                    <textarea required name="message" rows="4"
+                      class="w-full mt-2 p-3 rounded-md border border-white/30 focus:ring-0 focus:outline-none"
+                      placeholder="Parle-moi de ton projet..."></textarea>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <button type="submit"
+                      class="px-5 py-3 rounded-md bg-[var(--ink-2)] text-[var(--bg-1)] font-medium hover:scale-105 transition-transform">Envoyer</button>
+                    <div class="text-sm text-[var(--muted)]">ou <a
+                        href="mailto:maticonan2006@gmail.com"
+                        class="underline">maticonan2006@gmail.com</a></div>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <div class="flex flex-col justify-center items-center  h-[700px]">
+              <div class="space-y-4">
+                <div class="glass rounded-xl p-6">
+                  <h4 class="font-semibold">Infos rapides</h4>
+                  <ul class="mt-3 text-sm text-[var(--muted)] space-y-2">
+                    <li><strong>Localisation:</strong> France Loiret</li>
+                    <li><strong>Disponibilité:</strong> Alternance &
+                      Freelance</li>
+                    <li><strong>Langues:</strong> Français, Anglais</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="glass rounded-xl p-6 mt-20">
+                <h4 class="font-semibold">Réseaux</h4>
+                <div class="mt-3 flex gap-3">
+                  <a class="p-2 rounded-md glass text-sm" href="#">GitHub</a>
+                  <a class="p-2 rounded-md glass text-sm" href="#">LinkedIn</a>
+                </div>
               </div>
             </div>
           </div>
+        </section>
+
+      </main>
+      <footer class="mt-auto py-6">
+        <div
+          class="max-w-6xl mx-auto px-6 text-sm text-[var(--muted)] flex items-center justify-center">
+          <div>© <span id="year"></span> Matis Conan</div>
+          <div></div>
         </div>
-      </section>
+      </footer>
 
-    </main>
-    <footer class="mt-auto py-6">
-      <div class="max-w-6xl mx-auto px-6 text-sm text-[var(--muted)] flex items-center justify-center">
-        <div>© <span id="year"></span> Matis Conan</div>
-        <div></div>
-      </div>
-    </footer>
+    </div>
 
-  </div>
-
-  <script>
+    <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const themeBtn = document.getElementById('themeBtn');
@@ -291,5 +383,5 @@
     }
     document.querySelectorAll('section').forEach((s, i)=>{ s.style.animation = `floatUp .6s ${i*120}ms cubic-bezier(.2,.9,.2,1) both`; });
   </script>
-</body>
+  </body>
 </html>
