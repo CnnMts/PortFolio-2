@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projet — Caisse Outils</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{
+      --bg-1: #EBEBF2;
+      --bg-2: #D2D3D9;
+      --ink-1: #051026;
+      --ink-2: #293040;
+      --muted: #7D828C;
+      --glass: rgba(255,255,255,0.6);
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(10px); opacity: 0; }
+      60% { transform: translateY(-6px); opacity: .9; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .fade-up { animation: floatUp .8s cubic-bezier(.2,.9,.2,1) both; }
+    .glass {
+      background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.5));
+      backdrop-filter: blur(6px) saturate(120%);
+      box-shadow: 0 8px 30px rgba(5,16,38,0.12);
+      border: 1px solid rgba(45,55,72,0.06);
+    }
+    .nav-underline { position: relative; }
+    .nav-underline::after{
+      content: ''; position: absolute; left:0; bottom:-6px; height:2px; width:0;
+      background: linear-gradient(90deg,var(--ink-2),var(--muted));
+      transition: width 260ms cubic-bezier(.2,.9,.2,1);
+    }
+    .nav-underline:hover::after{ width:100%; }
+  </style>
+</head>
+<body class="antialiased" style="background: linear-gradient(180deg,var(--bg-1),var(--bg-2)); color:var(--ink-1); font-family:Inter, ui-sans-serif, system-ui;">
+  <header class="sticky top-0 z-40 backdrop-blur-sm" style="background: linear-gradient(180deg, rgba(235,235,242,0.6), rgba(210,211,217,0.35));">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav class="hidden md:flex items-center gap-6 text-sm text-[var(--ink-2)]">
+        <a class="nav-underline" href="index.html#projects">Projets</a>
+        <a class="nav-underline" href="index.html#about">À propos</a>
+        <a class="nav-underline" href="index.html#contact">Contact</a>
+        <a href="/CV.pdf" class="ml-3 inline-block px-3 py-1.5 rounded-md glass text-[var(--ink-2)] text-sm font-medium">CV</a>
+      </nav>
+      <div>
+        <a href="index.html" class="px-4 py-2 rounded-md bg-[var(--ink-2)] text-[var(--bg-1)] font-medium">← Retour</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-12">
+    <section class="fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Caisse Outils</h1>
+      <p class="text-lg text-[var(--muted)] max-w-2xl">Application de gestion de caisse pour un magasin spécialisé dans les jeux vidéo d’occasion, mangas et jeux de société.  
+      Développée en <strong>Nuxt</strong> + <strong>Electron</strong> avec génération de factures PDF.</p>
+    </section>
+
+    <section class="fade-up">
+      <div class="rounded-xl overflow-hidden glass">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop" alt="Caisse outils preview" class="w-full h-96 object-cover" />
+      </div>
+    </section>
+    <section class="grid md:grid-cols-3 gap-8 fade-up">
+      <div class="glass rounded-xl p-6">
+        <h3 class="font-semibold text-lg mb-3">Technologies</h3>
+        <ul class="space-y-2 text-[var(--muted)] text-sm">
+          <li>• Nuxt 3</li>
+          <li>• Electron</li>
+          <li>• TailwindCSS</li>
+          <li>• jsPDF</li>
+        </ul>
+      </div>
+      <div class="glass rounded-xl p-6">
+        <h3 class="font-semibold text-lg mb-3">Fonctionnalités</h3>
+        <ul class="space-y-2 text-[var(--muted)] text-sm">
+          <li>• Gestion du stock</li>
+          <li>• Recherche par code-barres</li>
+          <li>• Suivi des ventes</li>
+          <li>• Génération de factures PDF</li>
+        </ul>
+      </div>
+      <div class="glass rounded-xl p-6">
+        <h3 class="font-semibold text-lg mb-3">Rôle</h3>
+        <p class="text-[var(--muted)] text-sm">Développement complet : backend (API PHP, MySQL) et frontend (Nuxt, Tailwind).  
+        Intégration Electron pour une application locale installable.</p>
+      </div>
+    </section>
+
+    <section class="fade-up flex items-center justify-between flex-col md:flex-row gap-6">
+      <a href="https://github.com/CnnMts" target="_blank" class="px-5 py-3 rounded-md glass font-medium hover:scale-105 transition-transform">Voir le code sur GitHub</a>
+      <a href="index.html#contact" class="px-5 py-3 rounded-md bg-[var(--ink-2)] text-[var(--bg-1)] font-medium hover:scale-105 transition-transform">Me contacter</a>
+    </section>
+  </main>
+
+  <footer class="mt-auto py-6">
+    <div class="max-w-6xl mx-auto px-6 text-sm text-[var(--muted)] flex items-center justify-center">
+      <div>© <span id="year"></span> Matis Conan</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
